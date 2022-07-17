@@ -12,16 +12,16 @@ export class UiBlockItemComponent implements OnInit {
 
   listData: any = []
 
-  constructor(private showCase: ShowCaseService) {
+  constructor() {
 
 
   }
 
   ngOnInit(): void {
-    this.showCase.getDataApi()
-      .subscribe((res) => {
-        this.listData = res
-      })
+    // this.showCase.getDataApi()
+    //   .subscribe((res) => {
+    //     this.listData = res
+    //   })
   }
 
 
